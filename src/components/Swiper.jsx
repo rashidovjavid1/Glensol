@@ -11,7 +11,7 @@ const MySwiper = () => {
       slidesPerView={1}
       loop={true}
       autoplay={{
-        delay: 3000, // 3 saniyə
+        delay: 3000,
         disableOnInteraction: false,
       }}
     >
