@@ -4,14 +4,14 @@ import "swiper/css";
 import Slider1 from "../assets/slider1.jpeg";
 import Slider2 from "../assets/slider2.jpeg";
 
-const MySwiper = () => {
+const HeroSwiper = () => {
   return (
     <Swiper
       modules={[Autoplay]}
       slidesPerView={1}
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 6000,
         disableOnInteraction: false,
       }}
     >
@@ -26,4 +26,4 @@ const MySwiper = () => {
   );
 };
 
-export default MySwiper;
+export default HeroSwiper;
