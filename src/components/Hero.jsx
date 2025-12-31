@@ -119,11 +119,7 @@ const Hero = () => {
               <span>What We Do</span>
               <h3>Our Services</h3>
             </div>
-            <div className="ourServicesTab">
-              {
-                servicesTab.map(())
-              }
-            </div>
+            <div className="ourServicesTab"></div>
           </div>
         </div>
       </section>
