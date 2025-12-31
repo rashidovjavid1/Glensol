@@ -1,29 +1,29 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 import Slider1 from "../assets/slider1.jpeg";
 import Slider2 from "../assets/slider2.jpeg";
 
-const HeroSwiper = () => {
+export default function HeroSwiper() {
   return (
     <Swiper
-      modules={[Autoplay]}
+      spaceBetween={0}
       slidesPerView={1}
-      loop={true}
+      modules={[Autoplay]}
       autoplay={{
         delay: 6000,
         disableOnInteraction: false,
       }}
+      loop={true}
+      className="hero-swiper"
+      style={{ backgroundColor: "transparent" }}
     >
       <SwiperSlide>
-        <img src={Slider1} alt="slider 1" />
+        <img src={Slider1} alt="Industrial Services" />
       </SwiperSlide>
-
       <SwiperSlide>
-        <img src={Slider2} alt="slider 2" />
+        <img src={Slider2} alt="Turbomachinery" />
       </SwiperSlide>
     </Swiper>
   );
-};
-
-export default HeroSwiper;
+}
