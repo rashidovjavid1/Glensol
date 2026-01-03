@@ -1,37 +1,56 @@
-main {
-  .heroSection {
-    .heroSectionMain {
-      .heroSwiper {
-        .swiperContainer {
-          .container {
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 160rem;
-            margin-inline: auto;
-            padding-inline: clamp(2rem, 5vw, 6rem);
-            .heroContent {
-              z-index: 1;
-              flex-direction: column;
-              justify-content: space-around;
-              gap: 6rem;
-              width: 100%;
-              height: 80%;
-              display: flex;
-              position: absolute;
-              top: 9.2rem;
-            }
-          }
+main .heroSection .heroSectionMain .heroSwiper {
+  width: 100%;
+
+  .swiper {
+    height: fit-content;
+
+    .container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 160rem;
+      margin-inline: auto;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+
+      .heroContent {
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 6rem;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        position: absolute;
+        top: 9.2rem;
+
+        h2 {
+          color: #fff;
+          letter-spacing: -0.1rem;
+          max-width: 40%;
+          font-size: 5.2rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 120%;
+        }
+        p {
+          color: #059ff8;
+          letter-spacing: -0.016rem;
+          align-items: center;
+          gap: 0.8rem;
+          width: fit-content;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%;
+          transition: all 0.3s;
+          display: inline-flex;
         }
       }
-    }
-    .autoPlayProgress {
     }
   }
 }
 
 .hero-swiper {
   img {
-    height: auto;
     object-fit: cover;
     width: 100%;
     height: 57.6rem;
