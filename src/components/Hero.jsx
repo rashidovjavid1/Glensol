@@ -89,6 +89,57 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <section className="ourServices">
+        <div className="container">
+          <div className="ourServicesMain">
+            <div className="ourServicesTitle">
+              <span>What We Do</span>
+              <h3>Our Services</h3>
+            </div>
+            <div className="servicesTab">
+              <div className="servicesTabList">
+                <div className="servicesTabItemActive">Your One Stop Shop</div>
+                <div className="servicesTabItem">
+                  <div className="servicesTabItemTitle">
+                    Turbo Machinary Maintance
+                  </div>
+                </div>
+                <div className="servicesTabItem">
+                  <div className="servicesTabItemTitle">Pump maintenance</div>
+                </div>
+                <div className="servicesTabItem">
+                  <div className="servicesTabItemTitle">Valve maintenance</div>
+                </div>
+                <div className="servicesTabItem">
+                  <div className="servicesTabItemTitle">
+                    Electrical motors and generators maintenance
+                  </div>
+                </div>
+                <div className="servicesTabItem">
+                  <div className="servicesTabItemTitle">
+                    Electrical equipment maintenance
+                  </div>
+                </div>
+              </div>
+              <div className="servicesTabsItemActive">
+                <div className="servicesDescription">
+                  <div className="top">
+                    <h3>Your One Stop</h3>
+                    <p>
+                      Glensol provides comprehensive warehouse management and
+                      vendor-managed inventory (VMI) solutions, ensuring optimal
+                      stock availability and serviceability.
+                    </p>
+                  </div>
+                </div>
+                <div className="servicesTabsItemActiveBottom">
+                  <div className="servicesTabActiveItemImage"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
