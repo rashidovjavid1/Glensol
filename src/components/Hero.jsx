@@ -75,7 +75,17 @@ const Hero = () => {
                 </svg>
               </a>
             </div>
-            <div className="whoWeAreRight"></div>
+            <div className="whoWeAreRight">
+              <div className="videoWrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/m0ivT117ImM"
+                  title="Glensol Video"
+                  frameBorder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
