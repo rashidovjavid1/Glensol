@@ -1,4 +1,4 @@
-main .heroSection .heroSectionMain .heroSwiper {
+.heroSection .heroSectionMain .heroSwiper {
   width: 100%;
 
   .swiper {
@@ -31,7 +31,106 @@ main .heroSection .heroSectionMain .heroSwiper {
           font-weight: 300;
           line-height: 120%;
         }
+        .learnMoreButton {
+          position: relative;
+          color: #fff;
+          transition: color 0.3s ease;
+          letter-spacing: -0.016rem;
+          align-items: center;
+          gap: 0.8rem;
+          width: fit-content;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%;
+          transition: all 0.3s;
+          display: inline-flex;
+
+          .arrowIcon {
+            stroke: #fff;
+            transition: transform 0.3s ease, margin-left 0.3s ease;
+            transition: stroke 0.3s ease;
+          }
+
+          &:hover {
+            transform: translateX(10px);
+
+            color: #059ff8;
+
+            .arrowIcon {
+              stroke: #059ff8;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            transition: all;
+          }
+
+          &:hover {
+            color: #059ff8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-swiper {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 57.6rem;
+    flex-shrink: 0;
+  }
+}
+
+.whoWeAreSection {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 160rem;
+    margin-inline: auto;
+    padding-inline: clamp(2rem, 5vw, 6rem);
+
+    .whoWeAreMain {
+      align-items: flex-start;
+      gap: 3.2rem;
+      display: flex;
+
+      .whoWeAreLeft {
+        span {
+          color: #059ff8;
+          letter-spacing: -0.03rem;
+          font-size: 1.4rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+        }
+        h1 {
+          color: #1e3057;
+          letter-spacing: -0.03rem;
+          margin-top: 1.1rem;
+          margin-bottom: 5.1rem;
+          font-size: 4.8rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 110%;
+        }
         p {
+          color: #1e3057;
+          max-width: 70%;
+          margin-bottom: 3.2rem;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160% 25.6px;
+        }
+        .learnMoreBttn {
           color: #059ff8;
           letter-spacing: -0.016rem;
           align-items: center;
@@ -45,15 +144,8 @@ main .heroSection .heroSectionMain .heroSwiper {
           display: inline-flex;
         }
       }
+      .whoWeAreRight {
+      }
     }
-  }
-}
-
-.hero-swiper {
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 57.6rem;
-    flex-shrink: 0;
   }
 }
