@@ -2,178 +2,23 @@ main {
   .heroSection {
     .heroSectionMain {
       .heroSwiper {
-        position: relative;
-
-        img {
-          width: 100%;
-          height: 58rem;
-          object-fit: cover;
-          display: block;
-        }
-
-        .heroContent {
-          position: absolute;
-          inset: 0;
-          z-index: 2;
-
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 2rem;
-
-          padding: 0 6rem;
-          color: #fff;
-
-          h1 {
-            max-width: 46rem;
-            margin: 0;
-            color: #fff;
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 500;
-            letter-spacing: -0.0625rem;
+        .swiperContainer {
+          .container {
           }
-          p {
-            margin-top: 6.75rem;
-            padding-top: 3.75rem;
-            font-size: medium;
-            font-weight: 600;
-            color: #fff;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            transition: 0.3s ease;
-          }
-        }
-
-        .heroHover {
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-          background: black;
-          opacity: 0.16;
         }
       }
+    }
+    .autoPlayProgress {
     }
   }
-  .whoWeAreSection {
-    .container {
-      margin-top: 12rem;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 160rem;
-      margin-inline: auto;
-      padding-inline: clamp(2rem, 5vw, 6rem);
+}
 
-      .whoWeAreMain {
-        align-items: flex-start;
-        gap: 3.2rem;
-        display: flex;
-
-        .whoWeAreLeft {
-          width: 62rem;
-          max-width: 50%;
-          flex: 1 0;
-
-          span {
-            color: #059ff8;
-            letter-spacing: -0.03rem;
-            font-size: 1.4rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130%;
-          }
-
-          h1 {
-            max-width: 72.9375rem;
-            padding-top: 0.69rem;
-            color: #1e3057;
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 200;
-            line-height: 3.3rem;
-            letter-spacing: -0.01875rem;
-          }
-          p {
-            max-width: 62.4375rem;
-            padding-top: 3.19rem;
-            color: #1e3057;
-            font-size: small;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 1.6rem;
-          }
-
-          a {
-            text-decoration: none;
-            > p {
-              padding-top: 2rem;
-              color: #059ff8;
-            }
-          }
-
-          .learnMoreBtn {
-            padding-left: 0.69rem;
-          }
-        }
-
-        .whoWeAreRight {
-          max-width: 62.875rem;
-          max-height: 42.4375rem;
-          position: relative;
-          width: 100%;
-          aspect-ratio: 12 / 6;
-          overflow: hidden;
-
-          iframe {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-          }
-        }
-      }
-    }
-  }
-
-  .ourServicesSection {
-    .container {
-      background: #ebf4fa;
-      margin-top: 12rem;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 160rem;
-      margin-inline: auto;
-      padding-inline: clamp(2rem, 5vw, 6rem);
-      .ourServicesMain {
-        padding-top: 6.19rem;
-        .ourServicesTitle {
-          span {
-            color: #059ff8;
-            font-size: small;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.1375rem;
-            letter-spacing: -0.01875rem;
-          }
-          h3 {
-            margin-top: 0.69rem;
-            color: #000;
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 3.3rem;
-            letter-spacing: -0.01875rem;
-          }
-          .ourServicesTab {
-            width: 75.75rem;
-            height: 24.99919rem;
-            background: #fff;
-          }
-        }
-      }
-    }
+.hero-swiper {
+  img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 57.6rem;
+    flex-shrink: 0;
   }
 }

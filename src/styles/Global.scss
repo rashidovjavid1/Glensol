@@ -1,5 +1,6 @@
 @import url(../styles/Fonts.scss);
 @import "./Hero.scss";
+
 html {
   font-size: 62.5%;
 }
@@ -16,6 +17,12 @@ body {
   padding-top: 8.3rem;
   font-family: Euclid Circular;
   position: relative;
+}
+
+svg {
+  width: 178;
+  height: 53;
+  fill: none;
 }
 
 header {
