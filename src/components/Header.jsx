@@ -1,12 +1,14 @@
 import React from "react";
 import LangIcon from "../assets/global.svg";
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   const menuItems = [
-    { label: "Who We Are", isDropdown: true },
-    { label: "What We Do", isDropdown: true },
-    { label: "Our Projects", isDropdown: true },
-    { label: "Media", isDropdown: true },
-    { label: "Careers", isDropdown: false },
+    { label: "Who We Are", path: "/who-we-are", isDropdown: true },
+    { label: "What We Do", path: "/what-we-do", isDropdown: true },
+    { label: "Our Projects", path: "/projects", isDropdown: true },
+    { label: "Media", path: "/media", isDropdown: true },
+    { label: "Careers", path: "/careers", isDropdown: false },
   ];
 
   return (
@@ -14,7 +16,7 @@ const Header = () => {
       <div className="container">
         <div className="headerMain">
           <div className="headerLogo">
-            <a href="#">
+            <NavLink>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="178"
@@ -72,7 +74,7 @@ const Header = () => {
                   stroke-miterlimit="10"
                 />
               </svg>
-            </a>
+            </NavLink>
           </div>
           <nav>
             <ul>
@@ -80,7 +82,7 @@ const Header = () => {
                 if (item.isDropdown) {
                   return (
                     <li key={i} className="hasDropdown">
-                      <a href="#">
+                      <NavLink to={item.path}>
                         {item.label}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -94,14 +96,14 @@ const Header = () => {
                             fill="#1E3057"
                           />
                         </svg>
-                      </a>
+                      </NavLink>
                     </li>
                   );
                 }
 
                 return (
                   <li key={i}>
-                    <a href="#">{item.label}</a>
+                    <NavLink to={item.path}>{item.label}</NavLink>
                   </li>
                 );
               })}
