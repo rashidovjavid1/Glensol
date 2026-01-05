@@ -172,10 +172,8 @@
     }
   }
 }
-
 .ourServices {
   .container {
-    margin-top: 15rem;
     box-sizing: border-box;
     width: 100%;
     max-width: 160rem;
@@ -188,58 +186,110 @@
           color: #059ff8;
           letter-spacing: -0.03rem;
           font-size: 1.4rem;
-          font-style: normal;
           font-weight: 500;
           line-height: 130%;
         }
 
         h3 {
-          color: #000;
-          letter-spacing: -0.03rem;
           margin-top: 1.1rem;
           font-size: 4.8rem;
-          font-style: normal;
           font-weight: 300;
+          letter-spacing: -0.03rem;
           line-height: 110%;
+          color: #000;
         }
       }
 
-      .servicesTab {
+      .ourServicesTab {
         margin-top: 6.2rem;
         display: flex;
-        .servicesTabList {
-          background: #fff;
-          flex-shrink: 0;
-          width: 30%;
-          .servicesTabItemActive {
-            border-bottom: 0.4rem solid #ebecf7;
-          }
 
-          .servicesTabItem {
-            .servicesTabItemTitle {
-              color: #059ff8;
-              font-size: 1.7rem;
-              font-weight: 600;
+        .ourServicesLeft {
+          width: 30%;
+
+          .ourServicesTabItem {
+            cursor: pointer;
+            border-bottom: 0.1rem solid #ebecf7;
+            padding: 2.3rem 3.2rem;
+
+            &.active {
+              border-bottom: 0.4rem solid #ebecf7;
             }
           }
         }
-      }
-    }
-  }
-  .ourServices {
-    .ourServicesTab {
-      .ourServicesRight {
-        .serviceImage {
-          width: 100%;
-          height: 36rem;
-          overflow: hidden;
-          border-radius: 0.8rem;
 
-          img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
+        .ourServices {
+          .container {
+            .ourServicesMain {
+              .ourServicesTab {
+                display: flex;
+
+                .ourServicesLeft {
+                  width: 30%;
+                }
+
+                .ourServicesRight {
+                  background: #fff;
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 7.2rem;
+                  width: 70%;
+                  padding: 3.76rem 4.8rem;
+
+                  .activeTabDescription {
+                    color: #1e3057;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 7.2rem;
+                    padding: 3.37rem 0 1.58rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    line-height: 160%;
+
+                    .top {
+                      h3 {
+                        color: #262743;
+                        letter-spacing: -0.048rem;
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                      }
+
+                      p {
+                        margin-top: 1.6rem;
+                      }
+                    }
+
+                    .bottom {
+                      a {
+                        color: #059ff8;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 1rem;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                      }
+                    }
+                  }
+
+                  .bottom {
+                    .activeTabImage {
+                      width: 36rem;
+                      height: 36rem;
+                      border-radius: 0.5rem;
+                      overflow: hidden;
+
+                      img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

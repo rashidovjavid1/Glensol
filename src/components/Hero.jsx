@@ -167,11 +167,34 @@ const Hero = () => {
               </div>
 
               <div className="ourServicesRight">
-                <h3>{servicesItemTab[activeIndex].contentTitle}</h3>
-
-                <p>{servicesItemTab[activeIndex].description}</p>
-
-                <img src={servicesItemTab[activeIndex].image} alt="#" />
+                <div className="activeTabDescription">
+                  <div className="top">
+                    <h3>{servicesItemTab[activeIndex].contentTitle}</h3>
+                    <p>{servicesItemTab[activeIndex].description}</p>
+                  </div>
+                  <div className="bottom">
+                    <a href="#">
+                      Learn more
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="7"
+                        viewBox="0 0 14 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.8396 2.97368C13.8394 2.97352 13.8398 2.97384 13.8396 2.97368L10.9816 0.157666C10.7675 -0.0532527 10.4213 -0.0524677 10.2082 0.159507C9.9951 0.371455 9.99592 0.714269 10.21 0.925215L12.1285 2.8155H0.546875C0.244836 2.8155 0 3.0579 0 3.35694C0 3.65598 0.244836 3.89839 0.546875 3.89839H12.1285L10.21 5.78867C9.99594 5.99962 9.99512 6.34243 10.2082 6.55438C10.4213 6.76638 10.7676 6.76711 10.9816 6.55622L13.8391 3.74072C13.8389 3.74088 13.8393 3.74055 13.8391 3.74072C14.0533 3.52907 14.0531 3.18463 13.8396 2.97368Z"
+                          fill="#059FF8"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="bottom">
+                  <div className="activeTabImage">
+                    <img src={servicesItemTab[activeIndex].image} alt="#" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
