@@ -223,37 +223,6 @@
             }
           }
         }
-
-        .servicesTabsItemActive {
-          .servicesDescription {
-            .top {
-              h3 {
-                color: #262743;
-                letter-spacing: -0.048rem;
-                font-size: 2.4rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-              }
-
-              p {
-                margin-top: 1.88rem;
-              }
-            }
-          }
-
-          .servicesTabsItemActiveBottom {
-            flex-shrink: 0;
-            gap: 4.7rem;
-            display: flex;
-            .servicesTabActiveItemImage {
-              object-fit: cover;
-              border-radius: 0.5rem;
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
       }
     }
   }
