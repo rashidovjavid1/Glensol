@@ -1,7 +1,60 @@
 import React from "react";
 import HeroSwiper from "./HeroSwiper";
+import { useState } from "react";
+
+import oneStop from "../assets/photo-182148f2-377e-4e0b-95a6-cf1292f4dd52.webp";
+import turboMachinary from "../assets/photo-ee67c5ba-cc70-4712-8da5-88e5e27e79a7.webp";
+import pumpMaintenance from "../assets/photo-e1ae0303-23eb-49ba-ae10-4fac52be7fb1.webp";
+import valveMaintenance from "../assets/photo-5a7b0813-33da-4913-96fe-996fceb93928.webp";
+import electricalMaintenance from "../assets/photo-878d8610-72ab-4175-8628-c736f646c719.webp";
+import electricalEquipment from "../assets/photo-ace72798-d0a8-4457-a93d-5de7c3c52bc0.webp";
 
 const Hero = () => {
+  const servicesItemTab = [
+    {
+      tabTitle: "Your One Stop Shop",
+      contentTitle: "Your One Stop",
+      description:
+        "Glensol provides comprehensive warehouse management and vendor-managed inventory solutions.",
+      image: oneStop,
+    },
+    {
+      tabTitle: "Turbomachinary maintenance",
+      contentTitle: "Turbomachinary maintenance",
+      description:
+        "Glensol enhances operational efficiency by offering expert turbomachinery services that reduce downtime and extend equipment life.",
+      image: turboMachinary,
+    },
+    {
+      tabTitle: "Pump maintenance",
+      contentTitle: "Pump maintenance",
+      description:
+        "We deliver unmatched value through expert maintenance, advanced monitoring, and tailored solutions that enhance system reliability and performance.",
+      image: pumpMaintenance,
+    },
+    {
+      tabTitle: "Valve maintenance",
+      contentTitle: "Valve maintenance",
+      description:
+        "Our seasoned expert teams provide onsite support, valve repairs, and high-pressure testing (up to 1,600 barG).",
+      image: valveMaintenance,
+    },
+    {
+      tabTitle: "Electrical motors and generators maintenance",
+      contentTitle: "Electrical motors and generators maintenance",
+      description:
+        "Glensol's Electromotor Maintenance Division enhances the durability and performance of your electrical motors and generators.",
+      image: electricalMaintenance,
+    },
+    {
+      tabTitle: "Electrical equipment maintenance",
+      contentTitle: "Electrical equipment maintenance",
+      description:
+        "Glensol drives performance with expert electrical and instrumentation services that power onshore and offshore operations across the Caspian region.",
+      image: electricalEquipment,
+    },
+  ];
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <main>
       <section className="heroSection">
@@ -96,45 +149,29 @@ const Hero = () => {
               <span>What We Do</span>
               <h3>Our Services</h3>
             </div>
-            <div className="servicesTab">
-              <div className="servicesTabList">
-                <div className="servicesTabItemActive">Your One Stop Shop</div>
-                <div className="servicesTabItem">
-                  <div className="servicesTabItemTitle">
-                    Turbo Machinary Maintance
+            <div className="ourServicesTab">
+              <div className="ourServicesLeft">
+                {servicesItemTab.map((item, index) => (
+                  <div
+                    key={index}
+                    className={
+                      activeIndex === index
+                        ? "ourServicesTabItem active"
+                        : "ourServicesTabItem"
+                    }
+                    onClick={() => setActiveIndex(index)}
+                  >
+                    {item.tabTitle}
                   </div>
-                </div>
-                <div className="servicesTabItem">
-                  <div className="servicesTabItemTitle">Pump maintenance</div>
-                </div>
-                <div className="servicesTabItem">
-                  <div className="servicesTabItemTitle">Valve maintenance</div>
-                </div>
-                <div className="servicesTabItem">
-                  <div className="servicesTabItemTitle">
-                    Electrical motors and generators maintenance
-                  </div>
-                </div>
-                <div className="servicesTabItem">
-                  <div className="servicesTabItemTitle">
-                    Electrical equipment maintenance
-                  </div>
-                </div>
+                ))}
               </div>
-              <div className="servicesTabsItemActive">
-                <div className="servicesDescription">
-                  <div className="top">
-                    <h3>Your One Stop</h3>
-                    <p>
-                      Glensol provides comprehensive warehouse management and
-                      vendor-managed inventory (VMI) solutions, ensuring optimal
-                      stock availability and serviceability.
-                    </p>
-                  </div>
-                </div>
-                <div className="servicesTabsItemActiveBottom">
-                  <div className="servicesTabActiveItemImage"></div>
-                </div>
+
+              <div className="ourServicesRight">
+                <h3>{servicesItemTab[activeIndex].contentTitle}</h3>
+
+                <p>{servicesItemTab[activeIndex].description}</p>
+
+                <img src={servicesItemTab[activeIndex].image} alt="#" />
               </div>
             </div>
           </div>
