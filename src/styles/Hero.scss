@@ -174,8 +174,6 @@
 }
 .ourServices {
   .container {
-    box-sizing: border-box;
-    width: 100%;
     max-width: 160rem;
     margin-inline: auto;
     padding-inline: clamp(2rem, 5vw, 6rem);
@@ -184,19 +182,14 @@
       .ourServicesTitle {
         span {
           color: #059ff8;
-          letter-spacing: -0.03rem;
           font-size: 1.4rem;
           font-weight: 500;
-          line-height: 130%;
         }
 
         h3 {
           margin-top: 1.1rem;
           font-size: 4.8rem;
           font-weight: 300;
-          letter-spacing: -0.03rem;
-          line-height: 110%;
-          color: #000;
         }
       }
 
@@ -209,8 +202,8 @@
 
           .ourServicesTabItem {
             cursor: pointer;
-            border-bottom: 0.1rem solid #ebecf7;
             padding: 2.3rem 3.2rem;
+            border-bottom: 0.1rem solid #ebecf7;
 
             &.active {
               border-bottom: 0.4rem solid #ebecf7;
@@ -218,76 +211,56 @@
           }
         }
 
-        .ourServices {
-          .container {
-            .ourServicesMain {
-              .ourServicesTab {
-                display: flex;
+        .ourServicesRight {
+          width: 70%;
+          background: #fff;
+          display: flex;
+          justify-content: space-between;
+          gap: 7.2rem;
+          padding: 3.76rem 4.8rem;
 
-                .ourServicesLeft {
-                  width: 30%;
-                }
+          .activeTabDescription {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 7.2rem;
+            font-size: 1.6rem;
+            line-height: 160%;
 
-                .ourServicesRight {
-                  background: #fff;
-                  display: flex;
-                  justify-content: space-between;
-                  gap: 7.2rem;
-                  width: 70%;
-                  padding: 3.76rem 4.8rem;
+            .top {
+              h3 {
+                font-size: 2.4rem;
+                font-weight: 600;
+              }
 
-                  .activeTabDescription {
-                    color: #1e3057;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 7.2rem;
-                    padding: 3.37rem 0 1.58rem;
-                    font-size: 1.6rem;
-                    font-weight: 400;
-                    line-height: 160%;
+              p {
+                margin-top: 1.6rem;
+              }
+            }
 
-                    .top {
-                      h3 {
-                        color: #262743;
-                        letter-spacing: -0.048rem;
-                        font-size: 2.4rem;
-                        font-weight: 600;
-                      }
+            .bottom {
+              a {
+                color: #059ff8;
+                display: inline-flex;
+                align-items: center;
+                gap: 1rem;
+                font-weight: 600;
+              }
+            }
+          }
 
-                      p {
-                        margin-top: 1.6rem;
-                      }
-                    }
+          .bottom {
+            .activeTabImage {
+              width: 36rem;
+              height: 36rem;
+              border-radius: 0.5rem;
+              overflow: hidden;
 
-                    .bottom {
-                      a {
-                        color: #059ff8;
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 1rem;
-                        font-size: 1.6rem;
-                        font-weight: 600;
-                      }
-                    }
-                  }
-
-                  .bottom {
-                    .activeTabImage {
-                      width: 36rem;
-                      height: 36rem;
-                      border-radius: 0.5rem;
-                      overflow: hidden;
-
-                      img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        display: block;
-                      }
-                    }
-                  }
-                }
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
               }
             }
           }
