@@ -63,6 +63,39 @@ const Hero = () => {
             <div className="swiperContainer">
               <div className="swiper">
                 <HeroSwiper />
+                <div className="containerStatusBar">
+                  <div className="statusBar">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="279"
+                      height="4"
+                      viewBox="0 0 279 4"
+                      fill="none"
+                    >
+                      <path d="M0 0H279V4H0V0Z" fill="#BAD5E5" />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="279"
+                      height="4"
+                      viewBox="0 0 279 4"
+                      fill="none"
+                    >
+                      <path d="M0 0H279V4H0V0Z" fill="#DAE8F0" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="279"
+                      height="4"
+                      viewBox="0 0 279 4"
+                      fill="none"
+                    >
+                      <path d="M0 0H279V4H0V0Z" fill="#DAE8F0" />
+                    </svg>
+                  </div>
+                </div>
+
                 <div className="container">
                   <div className="heroContent">
                     <h2>
@@ -197,6 +230,22 @@ const Hero = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="news">
+        <div className="container">
+          <div className="newsMain">
+            <div className="newsTop">
+              <span>Media</span>
+              <div className="sectionTitle">
+                <h3>Latest news</h3>
+                <a href="#" className="learnMoreButton">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div className="newsCards"></div>
           </div>
         </div>
       </section>
