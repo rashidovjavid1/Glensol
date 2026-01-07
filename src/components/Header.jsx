@@ -155,7 +155,7 @@ const Header = () => {
             </div>
             <div className="langChanger">
               <a href="#">
-                <img src={LangIcon} alt="Language Changer" />
+                <img src={LangIcon} alt="#" />
                 <p>EN</p>
               </a>
             </div>

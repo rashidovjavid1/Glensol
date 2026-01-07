@@ -3,6 +3,7 @@ import HeroSwiper from "./HeroSwiper";
 import WhoWeAre from "./WhoWeAre";
 import OurServices from "./OurServices";
 import News from "./News";
+import Partners from "./Partners";
 
 import statusBar from "../assets/icons/statusBar.svg";
 
@@ -17,7 +18,7 @@ const HomePage = () => {
                 <HeroSwiper />
                 <div className="containerStatusBar">
                   <div className="statusBar">
-                    <img src={statusBar} alt="Status Bar" />
+                    <statusBar />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="279"
@@ -73,6 +74,7 @@ const HomePage = () => {
       <WhoWeAre />
       <OurServices />
       <News />
+      <Partners />
     </main>
   );
 };
