@@ -26,50 +26,28 @@ const News = () => {
   return (
     <section className="newsSection">
       <div className="container">
-        <div className="newsMain">
+        <div className="newsSectionMain">
           <div className="newsTop">
             <span>Media</span>
-            <div className="sectionTitle">
+            <div className="title">
               <h3>Latest news</h3>
-              <a href="#" className="learnMoreButton">
-                Learn more
-              </a>
+              <a href="#">Learn more</a>
             </div>
           </div>
-          <div className="newsCards">
-            {/* <div className="newsCards">
-                <div className="newsCardsTop">
-                  <div className="newsCardImage">
-                    <div className="newsCardBottom">
-                      {
-                        newsList.map((item,index) =>(
-                          
-                        ) )
-                      }
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            {newsList.map((item, index) => {
-              console.log(item);
-              return (
-                <div className="newsCard" key={index}>
-                  <p>{item?.title}</p>
-                </div>
-              );
-            })}
-            {/* {newsList.map((item, index) => (
-                <div className="newsCard" key={index}>
-                  <div className="newsCardImage">
+          <div className="newsCard">
+            {newsList.map((item, index) => (
+              <div key={index} className="newsCardItem">
+                <div className="newsCardTop">
+                  <div className="newCardsImage">
                     <img src={item.image} alt="#" />
                   </div>
-
-                  <div className="newsCardContent">
-                    <span>{item.date}</span>
-                    <h4>{item.title}</h4>
-                  </div>
                 </div>
-              ))} */}
+                <div className="newCardsBottom">
+                  <span className="newsDate">{item.date}</span>
+                  <h4 className="newsTitle">{item.title}</h4>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
