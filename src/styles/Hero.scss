@@ -100,8 +100,8 @@
 }
 
 .whoWeAreSection {
+  padding: 9.4rem 0 10.4rem;
   .container {
-    margin-top: 15rem;
     box-sizing: border-box;
     width: 100%;
     max-width: 160rem;
@@ -188,16 +188,15 @@
   }
 }
 .ourServices {
-  background: #ebf4fb;
+  background: #ebf4fa;
+  padding: 9.4rem 0 10.4rem;
   .container {
-    margin-top: 12.1rem;
     max-width: 160rem;
     margin-inline: auto;
     padding-inline: clamp(2rem, 5vw, 6rem);
 
     .ourServicesMain {
       .ourServicesTitle {
-        padding-top: 9.9rem;
         span {
           color: #059ff8;
           font-size: 1.4rem;
