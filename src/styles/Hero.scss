@@ -300,7 +300,7 @@
   }
 }
 
-.news {
+.newsSection {
   padding-top: 10rem;
   .container {
     box-sizing: border-box;
@@ -353,9 +353,14 @@
         }
       }
       .newsCards {
-        flex-direction: column;
-        gap: 1.3rem;
+        flex-wrap: wrap;
+        gap: 3.2rem;
+        margin-top: 4.5rem;
         display: flex;
+      }
+      .newsCardImage {
+      }
+      .newsCardContent {
       }
     }
   }

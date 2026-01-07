@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import Slider1 from "../assets/slider1.jpeg";
-import Slider2 from "../assets/slider2.jpeg";
+import Slider1 from "../assets/images/slider1.jpeg";
+import Slider2 from "../assets/images/slider2.jpeg";
 
 export default function HeroSwiper() {
   return (

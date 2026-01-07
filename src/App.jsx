@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
 import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import HomePage from "./components/HomePage";
 
 import WhoWeAre from "./pages/WhoWeAre";
 import WhatWeDo from "./pages/WhatWeDo";
@@ -13,15 +14,15 @@ const App = () => {
   return (
     <>
       <Header />
+
       <Routes>
-        <Route path="/" element={<WhoWeAre />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/media" element={<Media />} />
         <Route path="/careers" element={<Careers />} />
       </Routes>
-      <Hero />
     </>
   );
 };

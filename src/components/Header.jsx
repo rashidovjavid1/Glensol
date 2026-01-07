@@ -1,5 +1,6 @@
 import React from "react";
-import LangIcon from "../assets/global.svg";
+import LangIcon from "../assets/icons/global.svg";
+
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
