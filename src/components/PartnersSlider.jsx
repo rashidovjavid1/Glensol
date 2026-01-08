@@ -34,15 +34,37 @@ const PartnersSlider = () => {
   const nextRef = useRef(null);
 
   return (
-    <Swiper slidesPerView={6} spaceBetween={40} loop className="partnersSwiper">
-      {partners.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div className="partnerItem">
-            <img src={item.image} alt="partner" />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+      <Swiper
+        modules={[Navigation]}
+        slidesPerView={6}
+        spaceBetween={40}
+        loop
+        className="partnersSwiper"
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+        }}
+        navigation
+      >
+        {partners.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="partnerItem">
+              <img src={item.image} alt="partner" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <div className="partnersNav">
+        <button ref={prevRef} className="partnersPrev">
+          ‹
+        </button>
+        <button ref={nextRef} className="partnersNext">
+          ›
+        </button>
+      </div>
+    </>
   );
 };
 

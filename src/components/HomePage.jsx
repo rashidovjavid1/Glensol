@@ -4,8 +4,11 @@ import WhoWeAre from "./WhoWeAre";
 import OurServices from "./OurServices";
 import News from "./News";
 import Partners from "./Partners";
+import OurProjects from "./OurProjects";
+import Bottom from "./Bottom";
 
-import statusBar from "../assets/icons/statusBar.svg";
+import StatusBar from "../assets/icons/statusBar.svg";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -18,7 +21,7 @@ const HomePage = () => {
                 <HeroSwiper />
                 <div className="containerStatusBar">
                   <div className="statusBar">
-                    <statusBar />
+                    <img src={StatusBar} alt="Status Bar" />
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="279"
@@ -75,6 +78,8 @@ const HomePage = () => {
       <OurServices />
       <News />
       <Partners />
+      <OurProjects />
+      <Bottom />
     </main>
   );
 };
