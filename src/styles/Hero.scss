@@ -808,3 +808,130 @@ footer {
     }
   }
 }
+
+.whoWeAreLayout {
+  .aboutPage {
+    .pageBanner {
+      .aboutMain {
+        padding: 10rem 0;
+
+        .aboutTop {
+          max-width: 120rem;
+          margin: 0 auto 12rem;
+
+          .aboutTopTextfield {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10rem;
+            row-gap: 4rem;
+
+            .aboutTextFieldItem {
+              font-size: 1.6rem;
+              line-height: 1.8;
+              color: #475569;
+              text-align: left;
+            }
+          }
+        }
+
+        .aboutServe {
+          max-width: 120rem;
+          margin: 0 auto;
+
+          .aboutServeTitle {
+            max-width: 88rem;
+            margin-bottom: 6rem;
+            text-align: left;
+
+            span {
+              display: block;
+              font-size: 1.4rem;
+              color: #2563eb;
+              margin-bottom: 1.2rem;
+            }
+
+            h3 {
+              font-size: 4.2rem;
+              font-weight: 500;
+              color: #0f172a;
+              line-height: 1.2;
+            }
+          }
+
+          .aboutServeCard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10rem;
+            row-gap: 6rem;
+
+            .aboutServeItemCard {
+              text-align: left;
+
+              h4 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: #0f172a;
+                margin-bottom: 1.6rem;
+              }
+
+              p {
+                font-size: 1.6rem;
+                line-height: 1.8;
+                color: #475569;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .aboutPage {
+      .pageBanner {
+        .aboutMain {
+          .aboutTop {
+            .aboutTopTextfield {
+              column-gap: 6rem;
+            }
+          }
+
+          .aboutServe {
+            .aboutServeCard {
+              column-gap: 6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .aboutPage {
+      .pageBanner {
+        .aboutMain {
+          .aboutTop {
+            margin-bottom: 8rem;
+
+            .aboutTopTextfield {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          .aboutServe {
+            .aboutServeTitle {
+              h3 {
+                font-size: 3rem;
+              }
+            }
+
+            .aboutServeCard {
+              grid-template-columns: 1fr;
+              row-gap: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
