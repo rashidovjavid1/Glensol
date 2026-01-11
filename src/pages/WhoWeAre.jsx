@@ -36,7 +36,6 @@ const WhoWeAre = () => {
         <div className="pageBanner">
           <div className="pageBannerImg">
             <img src={BannerImage} alt="Who We Are Image" />
-
             <div className="container">
               <div className="pageBannerBottom">
                 <span>Who we are</span>

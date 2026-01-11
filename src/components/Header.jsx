@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container">
         <div className="headerMain">
           <div className="headerLogo">
-            <NavLink>
+            <NavLink to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="178"
