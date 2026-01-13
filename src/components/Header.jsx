@@ -1,8 +1,6 @@
 import React from "react";
 import LangIcon from "../assets/icons/global.svg";
 
-import DropDown from "../assets/icons/dropDown.svg";
-
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -81,18 +79,31 @@ const Header = () => {
           </div>
           <nav>
             <ul>
-              {menuItems.map((item, i) => {
+              {menuItems.map((item, index) => {
                 if (item.isDropdown) {
                   return (
-                    <li key={i} className="hasDropdown">
-                      {item.label}
-                      <img src={DropDown} alt="Drop Down" />
+                    <li key={index} className="hasDropdown">
+                      <NavLink to={item.path}>
+                        {item.label}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.4697 6.96974C14.7626 6.67687 15.2374 6.67685 15.5303 6.96974C15.8231 7.26263 15.8231 7.73741 15.5303 8.03029L10.5303 13.0303C10.2374 13.3232 9.76262 13.3231 9.46973 13.0303L4.46973 8.03029C4.17683 7.7374 4.17683 7.26264 4.46973 6.96974C4.76262 6.67687 5.23739 6.67685 5.53027 6.96974L10 11.4395L14.4697 6.96974Z"
+                            fill="#1E3057"
+                          />
+                        </svg>
+                      </NavLink>
                     </li>
                   );
                 }
 
                 return (
-                  <li key={i}>
+                  <li key={index}>
                     <NavLink to={item.path}>{item.label}</NavLink>
                   </li>
                 );
