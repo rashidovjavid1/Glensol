@@ -82,6 +82,20 @@ header {
               font-size: 1.4rem;
               color: #111;
               text-decoration: none;
+
+              & :hover {
+                .dropdown {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: translateY(0);
+                }
+                a {
+                  svg {
+                    transform: rotate(180deg);
+                    transition: transform 0.25 ease;
+                  }
+                }
+              }
             }
           }
         }

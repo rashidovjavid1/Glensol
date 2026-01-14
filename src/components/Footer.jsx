@@ -6,6 +6,13 @@ import FB from "../assets/icons/fb.svg";
 import IN from "../assets/icons/in.svg";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const footerItems = [
     "Who we are",
     "What we do",
@@ -96,7 +103,7 @@ const Footer = () => {
                 <a href="#">AZ</a>
                 <a href="#">EN</a>
               </div>
-              <button className="topPageButton">
+              <button onClick={scrollToTop} className="topPageButton">
                 <img src={ArrowUp} alt="Arrow Up" />
               </button>
             </div>

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import LangIcon from "../assets/icons/global.svg";
 
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [openNavBar, setOpenNavBar] = useState(null);
+  const handleToggle = (index) => {
+    setOpenNavBar(openNavBar === index ? null : index);
+  };
+
   const menuItems = [
     { label: "Who We Are", path: "/who-we-are", isDropdown: true },
     { label: "What We Do", path: "/what-we-do", isDropdown: true },
@@ -83,7 +88,10 @@ const Header = () => {
                 if (item.isDropdown) {
                   return (
                     <li key={index} className="hasDropdown">
-                      <NavLink to={item.path}>
+                      <NavLink
+                        to={item.path}
+                        onClick={() => handleToggle(index)}
+                      >
                         {item.label}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
