@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Media from "./pages/Media";
 import Careers from "./pages/Careers";
 import Footer from "./components/Footer";
+import Search from "./pages/Search";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/media" element={<Media />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </>

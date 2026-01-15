@@ -120,7 +120,7 @@ const Header = () => {
           </nav>
           <div className="headerRight">
             <div className="search">
-              <a href="#">
+              <NavLink to={"/search"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -134,7 +134,7 @@ const Header = () => {
                   />
                 </svg>
                 <p>Search</p>
-              </a>
+              </NavLink>
             </div>
             <div className="telephone">
               <a href="#">
