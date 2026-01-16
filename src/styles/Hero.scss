@@ -1012,8 +1012,6 @@ footer {
             width: 4rem;
             height: 4rem;
             flex-shrink: 0;
-            opacity: 0.6;
-            transition: opacity 0.25s ease;
           }
 
           &:focus-within img {
@@ -1046,7 +1044,6 @@ footer {
         }
         .searchDescription {
           align-items: center;
-          margin-top: 0.8rem;
           max-width: 60rem;
           margin-inline: auto;
           color: #1e3057;
@@ -1055,7 +1052,7 @@ footer {
           font-weight: 400;
           line-height: 140%;
           letter-spacing: -0.03rem;
-          opacity: 0.5;
+          opacity: 30%;
         }
       }
     }

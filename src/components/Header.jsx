@@ -137,7 +137,7 @@ const Header = () => {
               </NavLink>
             </div>
             <div className="telephone">
-              <a href="#">
+              <NavLink to={"/contact"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -159,7 +159,7 @@ const Header = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
+              </NavLink>
             </div>
             <div className="langChanger">
               <a href="#">
