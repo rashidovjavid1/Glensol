@@ -64,7 +64,9 @@
 
           .arrowIcon {
             stroke: #fff;
-            transition: transform 0.3s ease, margin-left 0.3s ease;
+            transition:
+              transform 0.3s ease,
+              margin-left 0.3s ease;
             transition: stroke 0.3s ease;
           }
 
@@ -230,7 +232,9 @@
             line-height: normal;
             letter-spacing: -0.034rem;
 
-            transition: color 0.25s ease, font-weight 0.25s ease;
+            transition:
+              color 0.25s ease,
+              font-weight 0.25s ease;
 
             &.active {
               color: #059ff8;
@@ -1060,6 +1064,197 @@ footer {
 }
 
 .contact {
+  background: #fff;
+
+  .container {
+    max-width: 160rem;
+    margin-inline: auto;
+    padding-inline: clamp(2rem, 5vw, 6rem);
+  }
+
+  &__breadcrumb {
+    padding: 2.5rem 0;
+    font-size: 1.3rem;
+
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+  }
+
+  &__main {
+    background: #f3f5f8;
+  }
+
+  &__top {
+    padding: 7rem 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 5rem;
+
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    span {
+      color: #005ad5;
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 600;
+      margin: 1.2rem 0 1.6rem;
+      color: #0a0a0a;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.7;
+      color: #555;
+      max-width: 48rem;
+    }
+  }
+
   &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 3rem;
+
+    img {
+      width: 20px;
+      margin-bottom: 0.6rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+      color: #111;
+      text-decoration: none;
+    }
+
+    &--address {
+      max-width: 36rem;
+    }
+  }
+
+  &__social {
+    margin-top: 3.5rem;
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    &-icons {
+      display: flex;
+      gap: 1.4rem;
+
+      img {
+        width: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 8rem 0;
+  }
+
+  &__form {
+    background: #fff;
+    max-width: 82rem;
+    padding: 5rem 6rem;
+    border: 1px solid #e6e8ec;
+  }
+
+  &__form-title {
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #0a0a0a;
+    }
+  }
+
+  &__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 3rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+      color: #444;
+    }
+
+    textarea {
+      min-height: 13rem;
+      resize: none;
+    }
+
+    &:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__input,
+  &__phone-input {
+    height: 4.6rem;
+    border: 1px solid #d7dbe0;
+    padding: 0 1.4rem;
+    font-size: 1.5rem;
+    outline: none;
+
+    &:focus {
+      border-color: #005ad5;
+    }
+  }
+
+  textarea.contact__input {
+    padding-top: 1.2rem;
+    height: auto;
+  }
+
+  &__actions {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+  }
+
+  &__submit {
+    background: #005ad5;
+    color: #fff;
+    border: none;
+    height: 4.8rem;
+    padding: 0 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    img {
+      width: 13px;
+    }
+
+    &:hover {
+      background: #0048ad;
+    }
   }
 }
