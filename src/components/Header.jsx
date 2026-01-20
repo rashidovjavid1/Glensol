@@ -11,6 +11,39 @@ const Header = () => {
     { label: "Careers", path: "/careers", isDropdown: false },
   ];
 
+  const dropdownContent = {
+    "Who We Are": [
+      { label: "About us", path: "/who-we-are/about" },
+      { label: "Our values", path: "/who-we-are/values" },
+      { label: "Safety", path: "/who-we-are/hse" },
+      { label: "Leadership team", path: "/who-we-are/team" },
+      { label: "Certificates", path: "/who-we-are/team" },
+      { label: "Our customers & partners", path: "/who-we-are/team" },
+    ],
+    "What We Do": [
+      { label: "Your one stop shop", path: "/what-we-do/services" },
+      { label: "Turbomachinary maintenance", path: "/what-we-do/services" },
+      { label: "Pump maintenance", path: "/what-we-do/services" },
+      { label: "Valve maintenance", path: "/what-we-do/services" },
+      {
+        label: "Electrical motors and generators maintenance",
+        path: "/what-we-do/services",
+      },
+      {
+        label: "Electrical equipments maintenance",
+        path: "/what-we-do/services",
+      },
+    ],
+    "Our Projects": [
+      { label: "Azerbaijan", path: "/projects/international" },
+      { label: "International", path: "/projects/azerbaijan" },
+    ],
+    Media: [
+      { label: "Newsroom", path: "/media/news" },
+      { label: "Reports", path: "/media/gallery" },
+    ],
+  };
+
   return (
     <header>
       <div className="container">
@@ -101,18 +134,15 @@ const Header = () => {
                           />
                         </svg>
                       </span>
+
                       <div className="dropdownSpacer"></div>
 
                       <ul className="dropdownMenu">
-                        <li>
-                          <NavLink to={item.path}>Overview</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={item.path}>Sub page 1</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={item.path}>Sub page 2</NavLink>
-                        </li>
+                        {dropdownContent[item.label]?.map((sub, i) => (
+                          <li key={i}>
+                            <NavLink to={sub.path}>{sub.label}</NavLink>
+                          </li>
+                        ))}
                       </ul>
                     </>
                   ) : (
