@@ -13,7 +13,7 @@ const Header = () => {
 
   const dropdownContent = {
     "Who We Are": [
-      { label: "About us", path: "/who-we-are/about" },
+      { label: "About us", path: "/who-we-are" },
       { label: "Our values", path: "/who-we-are/values" },
       { label: "Safety", path: "/who-we-are/hse" },
       { label: "Leadership team", path: "/who-we-are/team" },
@@ -119,7 +119,7 @@ const Header = () => {
                 >
                   {item.isDropdown ? (
                     <>
-                      <span className="navLabel">
+                      <NavLink to={item.path} className="navLabel">
                         {item.label}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ const Header = () => {
                             fill="#1E3057"
                           />
                         </svg>
-                      </span>
+                      </NavLink>
 
                       <div className="dropdownSpacer"></div>
 
