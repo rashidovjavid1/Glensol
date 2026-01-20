@@ -59,20 +59,15 @@ header {
           gap: 3.2rem;
           list-style: none;
 
-          li:hover a {
-            transition: all 0.3s;
-            color: #1e4fd8;
-          }
-
           li {
+            position: relative;
             font-size: 1.6rem;
             font-weight: 600;
-            &.hasDropdown {
-              a {
-                svg {
-                  margin-left: 0.6rem;
-                }
-              }
+
+            &:hover > a,
+            &:hover > .navLabel {
+              color: #1e4fd8;
+              transition: color 0.3s;
             }
 
             a {
@@ -82,20 +77,71 @@ header {
               font-size: 1.4rem;
               color: #111;
               text-decoration: none;
+            }
 
-              & :hover {
-                .dropdown {
+            &.hasDropdown {
+              .navLabel {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                cursor: pointer;
+
+                svg {
+                  margin-left: 0.6rem;
+                  transition: transform 0.25s ease;
+                }
+              }
+
+              &:hover {
+                .dropdownMenu {
                   opacity: 1;
                   visibility: visible;
                   transform: translateY(0);
                 }
-                a {
-                  svg {
-                    transform: rotate(180deg);
-                    transition: transform 0.25 ease;
-                  }
+
+                .navLabel svg {
+                  transform: rotate(180deg);
                 }
               }
+            }
+          }
+        }
+      }
+
+      .dropdownMenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        min-width: 22rem;
+        padding: 1.6rem 0;
+
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(1rem);
+        transition: all 0.25s ease;
+
+        display: block;
+
+        li {
+          display: block;
+          width: 100%;
+
+          a {
+            display: block;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #111;
+            text-decoration: none;
+
+            &:hover {
+              background: #f5f7ff;
+              color: #1e4fd8;
             }
           }
         }
