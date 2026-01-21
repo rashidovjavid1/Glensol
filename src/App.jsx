@@ -12,6 +12,7 @@ import Careers from "./pages/Careers";
 import Footer from "./components/Footer";
 import Search from "./pages/Search";
 import Contact from "./pages/Contact";
+import Certificates from "./pages/Certificates";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/certificates" element={<Certificates />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/media" element={<Media />} />
