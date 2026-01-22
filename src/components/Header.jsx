@@ -14,10 +14,10 @@ const Header = () => {
   const dropdownContent = {
     "Who We Are": [
       { label: "About us", path: "/who-we-are" },
-      { label: "Our values", path: "/who-we-are/values" },
+      { label: "Our values", path: "/values" },
       { label: "Safety", path: "/who-we-are/hse" },
       { label: "Leadership team", path: "/who-we-are/team" },
-      { label: "Certificates", path: "/Certificates" },
+      { label: "Certificates", path: "/certificates" },
       { label: "Our customers & partners", path: "/who-we-are/team" },
     ],
     "What We Do": [
