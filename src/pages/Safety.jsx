@@ -47,7 +47,7 @@ const Safety = () => {
           <div className="safetyTitle">
             <div className="top">
               <a href="#">
-                Download Safety Guidelines
+                Download Safety Guideline
                 <img src={DownloadButton} alt="Download" />
               </a>
             </div>
