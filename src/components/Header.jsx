@@ -15,7 +15,7 @@ const Header = () => {
     "Who We Are": [
       { label: "About us", path: "/who-we-are" },
       { label: "Our values", path: "/values" },
-      { label: "Safety", path: "/who-we-are/hse" },
+      { label: "Safety", path: "/safety" },
       { label: "Leadership team", path: "/who-we-are/team" },
       { label: "Certificates", path: "/certificates" },
       { label: "Our customers & partners", path: "/who-we-are/team" },
