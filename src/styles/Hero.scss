@@ -64,7 +64,9 @@
 
           .arrowIcon {
             stroke: #fff;
-            transition: transform 0.3s ease, margin-left 0.3s ease;
+            transition:
+              transform 0.3s ease,
+              margin-left 0.3s ease;
             transition: stroke 0.3s ease;
           }
 
@@ -230,7 +232,9 @@
             line-height: normal;
             letter-spacing: -0.034rem;
 
-            transition: color 0.25s ease, font-weight 0.25s ease;
+            transition:
+              color 0.25s ease,
+              font-weight 0.25s ease;
 
             &.active {
               color: #059ff8;
@@ -1510,6 +1514,110 @@
                 line-height: 160%;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.teamPage {
+  padding: 0 0 0 13.3rem;
+  .teamBanner {
+    .bannerImg {
+      width: 100%;
+      height: 57.6rem;
+      position: relative;
+      display: block;
+      img {
+        object-fit: cover;
+        filter: brightness(0.7);
+        width: 100%;
+        height: 57.6rem;
+      }
+    }
+
+    .container {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 160rem;
+      margin-inline: auto;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+
+      .topTitle {
+        flex-direction: column;
+        gap: 3.1rem;
+        display: flex;
+        position: absolute;
+        bottom: 11.1rem;
+        span {
+          color: #fff;
+          letter-spacing: -0.048rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.7rem;
+        }
+        h1 {
+          color: #fff;
+          letter-spacing: -0.048rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.7rem;
+        }
+      }
+    }
+  }
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 160rem;
+    margin-inline: auto;
+    padding-inline: clamp(2rem, 5vw, 6rem);
+
+    .pageMain {
+      padding: 2.1rem 0 13.3rem;
+
+      .memberCards {
+        margin-top: 3.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.2rem;
+        row-gap: 6.5rem;
+
+        .memberCard {
+          width: calc(25% - 2.4rem);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .memberImage {
+            height: 34.3749rem;
+            width: 100%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          h3 {
+            color: #1e3057;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: -0.024rem;
+          }
+          p {
+            color: #059ff8;
+            font-feature-settings: "liga" off;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 165%;
+            letter-spacing: 0.036rem;
           }
         }
       }

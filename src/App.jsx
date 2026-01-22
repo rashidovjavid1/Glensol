@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Certificates from "./pages/Certificates";
 import Values from "./pages/Values";
 import Safety from "./pages/Safety";
+import Team from "./pages/Team";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
         <Route path="/certificates" element={<Certificates />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/safety" element={<Safety />} />
         <Route path="/values" element={<Values />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
