@@ -1089,48 +1089,133 @@
 }
 
 .careersPage {
-  padding: 0 0 13.3rem;
+  scroll-margin-top: 10rem;
 
-  .pageBanner {
-    position: relative;
+  .pageMain {
+    padding: 0 0 13.3rem;
 
-    .pageBannerImage {
-      filter: brightness(0.7);
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
+    .pageBanner {
       width: 100%;
-      height: 100%;
-      img {
-        object-fit: cover;
+      height: 57.6rem;
+      position: relative;
+
+      .bannerImage {
+        position: relative;
+        filter: brightness(0.7);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
-        height: 57.6rem;
+        height: 100%;
+
+        img {
+          object-fit: cover;
+          width: 151.3rem;
+          height: 57.6rem;
+        }
+      }
+      .container {
+        box-sizing: border-box;
+        margin-inline: auto;
+        max-width: 160rem;
+        width: 100%;
+        padding-inline: clamp(2rem, 5vw, 6rem);
+
+        .pageBannerTitle {
+          flex-direction: column;
+          gap: 3.1rem;
+          display: flex;
+          position: absolute;
+          bottom: 11.1rem;
+
+          span {
+            font-size: small;
+            color: #fff;
+            letter-spacing: -0.048rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.7rem;
+          }
+
+          h1 {
+            color: #fff;
+            font-size: 4.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.7rem;
+            letter-spacing: -0.048rem;
+          }
+        }
       }
     }
+
+    .pageTopTitle {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6.3rem;
+      gap: 3.1rem;
+
+      span {
+        color: #059ff8;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.03rem;
+      }
+
+      h3 {
+        color: #1e3057;
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 110%;
+        letter-spacing: -0.03rem;
+      }
+    }
+
     .container {
       box-sizing: border-box;
-      width: 100%;
-      max-width: 160rem;
       margin-inline: auto;
-      padding-inline: clamp(2rem, 5vw, 6rem);
-      .pageBannerTitle {
-        position: absolute;
-        span {
-          color: #fff;
-          font-size: 1.4rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          letter-spacing: -0.03rem;
+      width: 100%;
+      background: #ebf4fa;
+      margin-top: 6.3rem;
+
+      .bottomPage {
+        height: 51.2rem;
+        width: 100%;
+
+        .bottomImage {
+          display: flex;
+          justify-content: center;
+
+          img {
+            object-fit: cover;
+            width: 105.1rem;
+            height: 51.2rem;
+          }
         }
 
-        h3 {
-          color: #fff;
-          font-size: 4.8rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 2.7rem;
-          letter-spacing: -0.048rem;
+        .bottomText {
+          display: flex;
+          justify-items: center;
+
+          h3 {
+            color: #46464d;
+            font-size: 4.8rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 110%;
+            letter-spacing: -0.03rem;
+          }
+
+          p {
+            color: #46464d;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+          }
         }
       }
     }
