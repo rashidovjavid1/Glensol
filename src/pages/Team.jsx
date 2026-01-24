@@ -58,23 +58,23 @@ const Team = () => {
     },
     {
       photo: Member9,
-      name: "Additional Member 9",
-      role: "Team Member",
+      name: "Aydin Mammadov",
+      role: "Materials and Inventory Controls Manager",
     },
     {
       photo: Member10,
-      name: "Additional Member 10",
-      role: "Team Member",
+      name: "Fuad Alizada",
+      role: "Top Drive Operations Manager",
     },
     {
       photo: Member11,
-      name: "Additional Member 11",
-      role: "Team Member",
+      name: "Kazim Kazimov",
+      role: "Deputy General Director on P&E",
     },
     {
       photo: Member12,
-      name: "Additional Member 12",
-      role: "Team Member",
+      name: "Imran Aghayev",
+      role: "Commercial Manager",
     },
   ];
 
@@ -84,7 +84,6 @@ const Team = () => {
         <div className="bannerImg">
           <img src={TeamBanner} alt="Team Banner" />
         </div>
-
         <div className="container">
           <div className="topTitle">
             <span>Team</span>
