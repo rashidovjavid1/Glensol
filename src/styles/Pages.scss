@@ -1178,10 +1178,12 @@
       box-sizing: border-box;
       margin-inline: auto;
       width: 100%;
-      background: #ebf4fa;
       margin-top: 6.3rem;
+      padding-inline: clamp(2rem, 5vw, 6rem);
 
       .bottomPage {
+        margin-top: 6.3rem;
+        background: #ebf4fa;
         height: 51.2rem;
         width: 100%;
 
