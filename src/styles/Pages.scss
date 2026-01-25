@@ -1110,10 +1110,11 @@
 
         img {
           object-fit: cover;
-          width: 151.3rem;
+          width: 100%;
           height: 57.6rem;
         }
       }
+
       .container {
         box-sizing: border-box;
         margin-inline: auto;
@@ -1182,25 +1183,33 @@
       padding-inline: clamp(2rem, 5vw, 6rem);
 
       .bottomPage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 6.3rem;
+        gap: 6.5rem;
         background: #ebf4fa;
         height: 51.2rem;
         width: 100%;
 
-        .bottomImage {
+        .bottomPageBanner {
           display: flex;
           justify-content: center;
+          width: 50%;
 
           img {
             object-fit: cover;
-            width: 105.1rem;
+            width: 100%;
             height: 51.2rem;
           }
         }
 
-        .bottomText {
+        .bottomRight {
+          width: 74rem;
+          z-index: 2;
           display: flex;
-          justify-items: center;
+          flex-direction: column;
+          gap: 3rem;
 
           h3 {
             color: #46464d;
@@ -1212,6 +1221,53 @@
           }
 
           p {
+            color: #46464d;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+          }
+
+          a {
+            margin-top: 5.5rem;
+            text-decoration: none;
+            color: #059ff8;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: -0.016rem;
+
+            img {
+              object-fit: cover;
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+
+      .centerText {
+        display: flex;
+        align-items: center;
+        margin-top: 15.7rem;
+
+        .text {
+          display: flex;
+          justify-content: center;
+          gap: 15.9rem;
+
+          h3 {
+            width: 52.4rem;
+            color: #46464d;
+            font-size: 4.8rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 110%;
+            letter-spacing: -0.03rem;
+          }
+
+          p {
+            width: 55.4rem;
             color: #46464d;
             font-size: 1.6rem;
             font-style: normal;
