@@ -1156,100 +1156,111 @@
       padding-top: 6.3rem;
       gap: 3.1rem;
 
-      span {
-        color: #059ff8;
-        font-size: 1.4rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 130%;
-        letter-spacing: -0.03rem;
-      }
+      .container {
+        box-sizing: border-box;
+        margin-inline: auto;
+        width: 100%;
+        margin-top: 6.3rem;
+        padding-inline: clamp(2rem, 5vw, 6rem);
 
-      h3 {
-        color: #1e3057;
-        font-size: 4.8rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 110%;
-        letter-spacing: -0.03rem;
+        span {
+          color: #059ff8;
+          font-size: 1.4rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: -0.03rem;
+        }
+
+        h3 {
+          color: #1e3057;
+          font-size: 4.8rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 110%;
+          letter-spacing: -0.03rem;
+        }
       }
     }
 
-    .container {
-      box-sizing: border-box;
-      margin-inline: auto;
-      width: 100%;
+    .bottomPage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-top: 6.3rem;
-      padding-inline: clamp(2rem, 5vw, 6rem);
+      gap: 6.5rem;
+      background: #ebf4fa;
+      height: 51.2rem;
+      width: 100%;
 
-      .bottomPage {
+      .bottomPageBanner {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 6.3rem;
-        gap: 6.5rem;
-        background: #ebf4fa;
-        height: 51.2rem;
-        width: 100%;
+        justify-content: center;
+        width: 50%;
 
-        .bottomPageBanner {
-          display: flex;
-          justify-content: center;
-          width: 50%;
-
-          img {
-            object-fit: cover;
-            width: 100%;
-            height: 51.2rem;
-          }
-        }
-
-        .bottomRight {
-          width: 74rem;
-          z-index: 2;
-          display: flex;
-          flex-direction: column;
-          gap: 3rem;
-
-          h3 {
-            color: #46464d;
-            font-size: 4.8rem;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 110%;
-            letter-spacing: -0.03rem;
-          }
-
-          p {
-            color: #46464d;
-            font-size: 1.6rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 160%;
-          }
-
-          a {
-            margin-top: 5.5rem;
-            text-decoration: none;
-            color: #059ff8;
-            font-size: 1.6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 150%;
-            letter-spacing: -0.016rem;
-
-            img {
-              object-fit: cover;
-              padding-left: 1rem;
-            }
-          }
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 51.2rem;
         }
       }
 
-      .centerText {
+      .bottomRight {
+        width: 74rem;
+        z-index: 2;
         display: flex;
-        align-items: center;
-        margin-top: 15.7rem;
+        flex-direction: column;
+        gap: 3rem;
+
+        h3 {
+          color: #46464d;
+          font-size: 4.8rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 110%;
+          letter-spacing: -0.03rem;
+        }
+
+        p {
+          color: #46464d;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+
+        a {
+          margin-top: 5.5rem;
+          text-decoration: none;
+          color: #059ff8;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: -0.016rem;
+
+          img {
+            object-fit: cover;
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .centerText {
+      display: flex;
+      align-items: center;
+      margin-top: 5.2rem;
+      background-color: #f9f9f7;
+      width: 100%;
+      height: 30.8rem;
+
+      .container {
+        box-sizing: border-box;
+        margin-inline: auto;
+        width: 100%;
+        margin-top: 6.3rem;
+        padding-inline: clamp(2rem, 5vw, 6rem);
 
         .text {
           display: flex;
@@ -1273,6 +1284,25 @@
             font-style: normal;
             font-weight: 400;
             line-height: 160%;
+          }
+        }
+      }
+    }
+
+    .vacanciesBanner {
+      margin-top: 8.4rem;
+
+      .container {
+        max-width: 160rem;
+        margin-inline: auto;
+        padding-inline: clamp(2rem, 5vw, 6rem);
+
+        .vacanciesBannerTop {
+          h3 {
+            color: #46464d;
+            font-size: 4rem;
+            font-weight: 400;
+            letter-spacing: -0.12rem;
           }
         }
       }
