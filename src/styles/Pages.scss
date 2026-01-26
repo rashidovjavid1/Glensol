@@ -1088,221 +1088,446 @@
   }
 }
 
-.careersPage {
+.careers {
   scroll-margin-top: 10rem;
 
-  .pageMain {
+  .careersLayout {
     padding: 0 0 13.3rem;
+  }
 
-    .pageBanner {
-      width: 100%;
-      height: 57.6rem;
+  .careersHero {
+    width: 100%;
+    height: 57.6rem;
+    position: relative;
+
+    .careersHeroImage {
       position: relative;
+      filter: brightness(0.7);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
 
-      .bannerImage {
-        position: relative;
-        filter: brightness(0.7);
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
+      img {
+        object-fit: cover;
         width: 100%;
-        height: 100%;
-
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 57.6rem;
-        }
-      }
-
-      .container {
-        box-sizing: border-box;
-        margin-inline: auto;
-        max-width: 160rem;
-        width: 100%;
-        padding-inline: clamp(2rem, 5vw, 6rem);
-
-        .pageBannerTitle {
-          flex-direction: column;
-          gap: 3.1rem;
-          display: flex;
-          position: absolute;
-          bottom: 11.1rem;
-
-          span {
-            font-size: small;
-            color: #fff;
-            letter-spacing: -0.048rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.7rem;
-          }
-
-          h1 {
-            color: #fff;
-            font-size: 4.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.7rem;
-            letter-spacing: -0.048rem;
-          }
-        }
+        height: 57.6rem;
       }
     }
 
-    .pageTopTitle {
+    .container {
+      box-sizing: border-box;
+      margin-inline: auto;
+      max-width: 160rem;
+      width: 100%;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+    }
+
+    .careersHeroContent {
       display: flex;
       flex-direction: column;
-      padding-top: 6.3rem;
       gap: 3.1rem;
-
-      .container {
-        box-sizing: border-box;
-        margin-inline: auto;
-        width: 100%;
-        margin-top: 6.3rem;
-        padding-inline: clamp(2rem, 5vw, 6rem);
-
-        span {
-          color: #059ff8;
-          font-size: 1.4rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          letter-spacing: -0.03rem;
-        }
-
-        h3 {
-          color: #1e3057;
-          font-size: 4.8rem;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 110%;
-          letter-spacing: -0.03rem;
-        }
-      }
+      position: absolute;
+      bottom: 11.1rem;
     }
 
-    .bottomPage {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .careersHeroLabel {
+      font-size: small;
+      color: #fff;
+      letter-spacing: -0.048rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+    }
+
+    .careersHeroTitle {
+      color: #fff;
+      font-size: 4.8rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+      letter-spacing: -0.048rem;
+    }
+  }
+
+  .careersIntro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.3rem;
+    gap: 3.1rem;
+
+    .container {
+      box-sizing: border-box;
+      margin-inline: auto;
+      width: 100%;
       margin-top: 6.3rem;
-      gap: 6.5rem;
-      background: #ebf4fa;
-      height: 51.2rem;
-      width: 100%;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+    }
 
-      .bottomPageBanner {
-        display: flex;
-        justify-content: center;
-        width: 50%;
+    .careersIntroLabel {
+      color: #059ff8;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: -0.03rem;
+    }
 
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 51.2rem;
-        }
-      }
+    .careersIntroTitle {
+      color: #1e3057;
+      font-size: 4.8rem;
+      font-weight: 300;
+      line-height: 110%;
+      letter-spacing: -0.03rem;
+    }
+  }
 
-      .bottomRight {
-        width: 74rem;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+  .careersFeature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.3rem;
+    gap: 6.5rem;
+    background: #ebf4fa;
+    height: 51.2rem;
+    width: 100%;
 
-        h3 {
-          color: #46464d;
-          font-size: 4.8rem;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 110%;
-          letter-spacing: -0.03rem;
-        }
+    .careersFeatureImage {
+      width: 50%;
+      display: flex;
+      justify-content: center;
 
-        p {
-          color: #46464d;
-          font-size: 1.6rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 160%;
-        }
-
-        a {
-          margin-top: 5.5rem;
-          text-decoration: none;
-          color: #059ff8;
-          font-size: 1.6rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 150%;
-          letter-spacing: -0.016rem;
-
-          img {
-            object-fit: cover;
-            padding-left: 1rem;
-          }
-        }
+      img {
+        width: 100%;
+        height: 51.2rem;
+        object-fit: cover;
       }
     }
 
-    .centerText {
+    .careersFeatureContent {
+      width: 74rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      z-index: 2;
+    }
+
+    .careersFeatureTitle {
+      color: #46464d;
+      font-size: 4.8rem;
+      font-weight: 300;
+      line-height: 110%;
+    }
+
+    .careersFeatureText {
+      color: #46464d;
+      font-size: 1.6rem;
+      line-height: 160%;
+    }
+
+    .careersFeatureLink {
+      margin-top: 5.5rem;
+      color: #059ff8;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-decoration: none;
+
+      img {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  .careersPrograms {
+    display: flex;
+    align-items: center;
+    margin-top: 5.2rem;
+    background-color: #f9f9f7;
+    width: 100%;
+    height: 30.8rem;
+
+    .container {
+      box-sizing: border-box;
+      margin-inline: auto;
+      width: 100%;
+      margin-top: 6.3rem;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+    }
+
+    .careersProgramsContent {
       display: flex;
       align-items: center;
-      margin-top: 5.2rem;
-      background-color: #f9f9f7;
-      width: 100%;
-      height: 30.8rem;
+      gap: 15.9rem;
+    }
+
+    .careersProgramsTitle {
+      width: 52.4rem;
+      font-size: 4.8rem;
+      font-weight: 300;
+    }
+
+    .careersProgramsText {
+      width: 55.4rem;
+      font-size: 1.6rem;
+      line-height: 160%;
+    }
+  }
+
+  .careersVacancies {
+    margin-top: 8.4rem;
+
+    .container {
+      max-width: 160rem;
+      margin-inline: auto;
+      padding-inline: clamp(2rem, 5vw, 6rem);
+    }
+
+    .careersVacanciesHeader {
+      display: flex;
+      align-items: center;
+
+      .careersVacanciesTitle {
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: -0.12rem;
+      }
+    }
+
+    .careersVacanciesCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 110rem;
 
       .container {
         box-sizing: border-box;
-        margin-inline: auto;
+        max-width: 151rem;
         width: 100%;
-        margin-top: 6.3rem;
+        margin-inline: auto;
         padding-inline: clamp(2rem, 5vw, 6rem);
 
-        .text {
+        .vacanciesList {
+          padding-top: 5.5rem;
           display: flex;
-          justify-content: center;
-          gap: 15.9rem;
+          flex-direction: column;
+          border-bottom: 0.1px solid rgba(77, 122, 189, 0.7);
+          padding-bottom: 2.83rem;
 
-          h3 {
-            width: 52.4rem;
-            color: #46464d;
-            font-size: 4.8rem;
+          .vacanciesHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.47rem;
+          }
+
+          h4 {
+            color: #1e3057;
+            font-size: 2rem;
             font-style: normal;
-            font-weight: 300;
-            line-height: 110%;
-            letter-spacing: -0.03rem;
+            font-weight: 500;
+            line-height: 139.3%;
+          }
+
+          .careersVacanciesIcon {
+            img {
+              width: 2.8451rem;
+              height: 1.3781rem;
+            }
+          }
+
+          .vacanciesMeta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+          }
+
+          .vacanciesMetaRow {
+            display: flex;
+            gap: 0.6rem;
+          }
+
+          span {
+            color: #1e3057;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 139.3%;
           }
 
           p {
-            width: 55.4rem;
-            color: #46464d;
-            font-size: 1.6rem;
+            color: #1e3057;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 400;
-            line-height: 160%;
+            line-height: 139.3%;
+            opacity: 0.7;
           }
         }
       }
     }
+  }
 
-    .vacanciesBanner {
-      margin-top: 8.4rem;
+  .contact {
+    padding: 8rem 0;
 
-      .container {
-        max-width: 160rem;
-        margin-inline: auto;
-        padding-inline: clamp(2rem, 5vw, 6rem);
+    .formCard {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      background-color: #f9f9f7;
 
-        .vacanciesBannerTop {
+      .formCardLeft {
+        margin-left: 13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 7rem;
+
+        .formTitle {
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+          width: 40.7rem;
+
           h3 {
-            color: #46464d;
-            font-size: 4rem;
+            text-align: start;
+            color: #1e3057;
+            font-feature-settings: "liga" off;
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          p {
+            color: #1e3057;
+            font-size: 1.4rem;
+            font-style: normal;
             font-weight: 400;
-            letter-spacing: -0.12rem;
+            line-height: 139.3%;
+            opacity: 0.7;
+          }
+        }
+
+        .formMain {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5.3rem;
+          gap: 7.7rem;
+
+          .formRow {
+            padding-bottom: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 0.1px solid rgba(77, 122, 189, 0.7);
+
+            span {
+              color: #1e3057;
+              font-size: 1.1rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.48;
+              padding-bottom: 0.5rem;
+            }
+
+            input {
+              width: 43.2rem;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: #1e3057;
+              font-feature-settings: "liga" off;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.6;
+
+              &::placeholder {
+                color: black;
+                opacity: 1;
+              }
+            }
+          }
+          .contactTelephone {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.7rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 0.1px solid rgba(77, 122, 189, 0.7);
+
+            span {
+              color: #1e3057;
+              font-feature-settings: "liga" off;
+              font-size: 1.9rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+            input {
+              width: 43.2rem;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: #1e3057;
+              font-feature-settings: "liga" off;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.6;
+
+              &::placeholder {
+                color: black;
+                opacity: 1;
+              }
+            }
+          }
+          .bottomForm {
+            display: flex;
+            justify-content: center;
+            gap: 1.96rem;
+            padding-bottom: 5.7rem;
+
+            .fileDownloadButton {
+              width: 23rem;
+              height: 5.8rem;
+              color: #131e48;
+              font-size: 1.4rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 3.9231rem;
+              border: 1px solid rgba(39, 87, 126, 0.1);
+              background-color: #fff;
+            }
+
+            .enterButton {
+              border: 1px solid rgba(39, 87, 126, 0.1);
+              width: 23rem;
+              height: 5.8rem;
+              background: #059ff8;
+              color: #fff;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+              letter-spacing: -0.016rem;
+
+              svg {
+                margin-left: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+
+      .formCardRight {
+        .formImage {
+          img {
+            width: 79.7rem;
+            height: 64.7rem;
           }
         }
       }
