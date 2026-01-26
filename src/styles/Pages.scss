@@ -1414,12 +1414,15 @@
           flex-direction: column;
           margin-top: 5.3rem;
           gap: 7.7rem;
+          width: 100%;
 
           .formRow {
             padding-bottom: 1.4rem;
             display: flex;
             flex-direction: column;
             border-bottom: 0.1px solid rgba(77, 122, 189, 0.7);
+            width: 70%;
+            height: 70%;
 
             span {
               color: #1e3057;
