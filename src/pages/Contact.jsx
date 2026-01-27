@@ -12,17 +12,17 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="container">
-        <div className="contact__breadcrumb">
+        <div className="contactBreadcrumb">
           <NavLink to="/">Glensol</NavLink>
           &nbsp; / &nbsp;
           <NavLink to="/contact">Əlaqə</NavLink>
         </div>
       </div>
 
-      <div className="contact__main">
-        <div className="contact__top">
+      <div className="contactMain">
+        <div className="contactTop">
           <div className="container">
-            <div className="contact__title">
+            <div className="contactTitle">
               <span>Əlaqə</span>
               <h1>Bizimlə əlaqə</h1>
               <p>
@@ -33,18 +33,18 @@ const Contact = () => {
           </div>
 
           <div className="container">
-            <div className="contact__item">
+            <div className="contactItem">
               <img src={PhoneLogo} alt="Phone" />
               <a href="tel:+994123100819">+99412 310 08 19</a>
               <a href="tel:+994123100820">+99412 310 08 20</a>
             </div>
 
-            <div className="contact__item">
+            <div className="contactItem">
               <img src={EmailLogo} alt="Email" />
               <a href="mailto:info@glensol.az">info@glensol.az</a>
             </div>
 
-            <div className="contact__item contact__item--address">
+            <div className="contactItem contactAddress">
               <img src={LocationLogo} alt="Location" />
               <a
                 href="https://www.google.com/maps?q=40.38071071416792,49.87833578160276"
@@ -55,10 +55,10 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="contact__social">
+            <div className="contactSocial">
               <p>Bizi izləyin</p>
 
-              <div className="contact__social-icons">
+              <div className="contactSocialIcons">
                 <a
                   href="https://www.facebook.com/Global.Energy.Solutions.GLENSOL/"
                   target="_blank"
@@ -80,40 +80,40 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="contact__bottom">
+      <div className="contactBottom">
         <div className="container">
-          <div className="contact__form">
-            <div className="contact__form-title">
+          <div className="contactForm">
+            <div className="contactFormTitle">
               <h3>Sualınız var?</h3>
             </div>
 
-            <form className="contact__fields">
-              <div className="contact__field">
+            <form className="contactFields">
+              <div className="contactField">
                 <label htmlFor="fullname">Ad Soyad</label>
-                <input id="fullname" className="contact__input" />
+                <input id="fullname" className="contactInput" />
               </div>
 
-              <div className="contact__field">
+              <div className="contactField">
                 <label htmlFor="email">E-poçt</label>
-                <input id="email" className="contact__input" />
+                <input id="email" className="contactInput" />
               </div>
 
-              <div className="contact__field contact__field--phone">
+              <div className="contactField contactPhoneField">
                 <label htmlFor="mobile">Mobil nömrə</label>
                 <input
                   id="mobile"
-                  className="contact__phone-input"
+                  className="contactPhoneInput"
                   defaultValue="+994"
                 />
               </div>
 
-              <div className="contact__field">
+              <div className="contactField">
                 <label htmlFor="message">Mesajınız</label>
-                <textarea id="message" className="contact__input"></textarea>
+                <textarea id="message" className="contactInput"></textarea>
               </div>
 
-              <div className="contact__actions">
-                <button className="contact__submit">
+              <div className="contactActions">
+                <button className="contactSubmit">
                   Göndər
                   <img src={ArrowRight} alt="Arrow" />
                 </button>
