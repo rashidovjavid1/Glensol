@@ -26,6 +26,14 @@ svg {
   fill: none;
 }
 
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 160rem;
+  margin-inline: auto;
+  padding-inline: clamp(2rem, 5vw, 6rem);
+}
+
 header {
   position: fixed;
   top: 0;
