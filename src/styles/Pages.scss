@@ -248,6 +248,207 @@
 }
 
 .contact {
+  padding: 0 0 10.2rem;
+
+  .container {
+    box-sizing: border-box;
+    margin-inline: auto;
+    width: 100%;
+    width: 160rem;
+    padding-inline: clamp(2rem, 5vw, 6rem);
+
+    .breadcrumb {
+      align-items: center;
+      gap: 0.4rem;
+      margin: 1.9rem 0 5.3rem;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: #1e3057;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+      }
+    }
+
+    .breadcrumb a:not(:last-child):after {
+      content: "/";
+      color: #1e3057;
+      margin-left: 0.4rem;
+      font-size: 1.2rem;
+      font-style: normal;
+    }
+
+    .contactPageMain {
+      scroll-margin-top: 10rem;
+
+      .contactPageTop {
+        border-bottom: 0.1rem solid #ebf4fa;
+
+        .container {
+          box-sizing: border-box;
+          width: 100%;
+          max-width: 160rem;
+          margin-inline: auto;
+          padding-inline: clamp(2rem, 5vw, 6rem);
+
+          .pageTitle {
+            flex-direction: column;
+            gap: 1.2rem;
+            display: flex;
+
+            span {
+              color: #059ff8;
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 130%;
+            }
+
+            h1 {
+              color: #1e3057;
+              font-size: 4.8rem;
+              font-weight: 300;
+              line-height: 110%;
+            }
+
+            p {
+              width: 40%;
+              color: #131e48;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 154.496%;
+              letter-spacing: 0.032rem;
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .container {
+          box-sizing: border-box;
+          width: 100%;
+          max-width: 160rem;
+          margin-inline: auto;
+          padding-inline: clamp(2rem, 5vw, 6rem);
+
+          .contactItems {
+            margin-top: 6.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13.2rem;
+            padding-bottom: 7.2rem;
+
+            .contactItem {
+              display: flex;
+              align-items: center;
+              gap: 2.3rem;
+
+              a {
+                text-decoration: none;
+                color: var(--main-02-black, #14191f);
+                font-feature-settings: "liga" off;
+                font-size: 1.7rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 135%;
+                letter-spacing: 0.051rem;
+                opacity: 0.8;
+                transition: all 0.3s ease;
+              }
+
+              .item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+              }
+            }
+
+            .contactItemAddress {
+              margin-top: 6.4rem;
+              display: flex;
+              gap: 1.8rem;
+              padding-bottom: 7.2rem;
+              flex-wrap: wrap;
+
+              .item {
+                width: 23.8rem;
+                a {
+                  text-decoration: none;
+                  color: var(--main-02-black, #14191f);
+                  font-feature-settings: "liga" off;
+                  font-size: 1.7rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 135%;
+                  letter-spacing: 0.051rem;
+                }
+
+                &:not(:last-child)::after {
+                  content: "";
+                  position: absolute;
+                  right: -6.6rem;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 0.18rem;
+                  height: 7.3rem;
+                  background: black;
+                }
+              }
+            }
+
+            .contactItemSocial {
+              margin-top: 6.4rem;
+              display: flex;
+              gap: 2.6rem;
+              padding-bottom: 7.2rem;
+              flex-wrap: wrap;
+              align-items: center;
+
+              p {
+                text-decoration: none;
+                color: var(--main-02-black, #14191f);
+                font-feature-settings: "liga" off;
+                font-size: 1.7rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 135%;
+                letter-spacing: 0.051rem;
+              }
+
+              .item {
+                display: flex;
+                justify-content: center;
+                gap: 1.61rem;
+              }
+            }
+          }
+        }
+
+        .contactPageBottom {
+          padding-top: 8.3rem;
+
+          .container {
+            display: flex;
+            gap: 14.1rem;
+
+            .contactForm {
+              width: 40%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            iframe {
+              width: 50%;
+              height: 65.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .certificatesLayout {
