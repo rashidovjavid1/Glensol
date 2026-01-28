@@ -21,7 +21,7 @@ const Header = () => {
       { label: "Our customers & partners", path: "/who-we-are/team" },
     ],
     "What We Do": [
-      { label: "Your one stop shop", path: "/what-we-do/services" },
+      { label: "Your one stop shop", path: "/what-we-do" },
       { label: "Turbomachinary maintenance", path: "/what-we-do/services" },
       { label: "Pump maintenance", path: "/what-we-do/services" },
       { label: "Valve maintenance", path: "/what-we-do/services" },
