@@ -1799,6 +1799,39 @@
       display: flex;
       gap: 3.2rem;
       flex-wrap: wrap;
+
+      .partnersCards {
+        margin-top: 3.8rem;
+        display: flex;
+        gap: 3.2rem;
+        flex-wrap: wrap;
+
+        .partnersCard {
+          width: calc(16.6666666667% - 2.6666666667rem);
+          height: 14.9rem;
+          border-radius: 0.7572rem;
+          border: 0.947px solid #dfecf4;
+          background: #fff;
+          overflow: hidden;
+          padding: 3.5rem 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            border: 0.1px solid #059ff8;
+            transition: ease 0.3s all;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            max-width: 75%;
+            display: block;
+          }
+        }
+      }
     }
   }
 }
