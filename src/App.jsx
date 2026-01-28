@@ -15,6 +15,7 @@ import Certificates from "./pages/Certificates";
 import Values from "./pages/Values";
 import Safety from "./pages/Safety";
 import Team from "./pages/Team";
+import OurPartners from "./pages/OurPartners";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/safety" element={<Safety />} />
         <Route path="/values" element={<Values />} />
+        <Route path="/our-partners" element={<OurPartners />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/media" element={<Media />} />

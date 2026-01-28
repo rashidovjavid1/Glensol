@@ -18,7 +18,7 @@ const Header = () => {
       { label: "Safety", path: "/safety" },
       { label: "Leadership team", path: "/team" },
       { label: "Certificates", path: "/certificates" },
-      { label: "Our customers & partners", path: "/who-we-are/team" },
+      { label: "Our customers & partners", path: "/our-partners" },
     ],
     "What We Do": [
       { label: "Your one stop shop", path: "/what-we-do" },
