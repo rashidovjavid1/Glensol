@@ -1,31 +1,18 @@
 import React from "react";
 import ServicesPageBanner from "../assets/Images/servicesPageBanner.jpg";
 import ActiveTabBar from "../components/ActiveTabBar";
-const WhatWeDo = () => {
-  const servicesListLeft = [
-    { label: "Your One Stop Shop" },
-    { label: "Turbomachinery maintenance" },
-    { label: "Pump maintenance" },
-    { label: "Value maintenance" },
-    { label: "Electrical motors and generators maintenance" },
-    { label: "Electrical equipment maintenance" },
-    { label: "Static equipment maintenance" },
-    { label: "Top Drive overhaul and maintenance" },
-    { label: "Insturmentation and control system maintenance" },
-    { label: "Asset management solution" },
-    { label: "Traning services" },
-    { label: "EPC" },
-  ];
+import ServicesInfo from "../assets/icons/servicesIcon.svg";
 
-  const servicesDetailMainList = [
+const Services = () => {
+  const yourOneStopShopService = [
     {
-      title: "Your One Stop Shop",
+      pageTitle: "Warehouse and vendor managed inventory",
       description: [
-        "Glensol provides comprehensive warehouse management and vendor-managed inventory (VMI) solutions, ensuring optimal stock availability and serviceability. Our specialized storage facilities cater to diverse needs, minimizing downtime and supporting efficient operations for big clients like BP and SOCAR. We manage 17,000+ line items with advanced risk mitigation and a focus on reliability.",
+        "Glensol provides comprehensive warehouse management and vendor-managed inventory (VMI) solutions, ensuring optimal stock availability and serviceability. Our specialized storage facilities cater to diverse needs, minimizing downtime and supporting efficient operations for big clients like BP and SOCAR.",
         "Through meticulous monitoring and the implementation of specialized storage practices and risk mitigation strategies, we address stock discrepancies, minimize downtime, and reduce transportation risks to ensure efficient, reliable operations for our clients.",
       ],
-      servicesTitle: "Services",
-      services: [
+      bottomTitle: "Services:",
+      servicesList: [
         "Chemical Storage – 350 sq.m",
         "Regular Condition Storage – 7,500+ sq.m., with expansion options and an unlimited racking system",
         "Specialized Condition Storage – 700 sq.m. dust-free environment with humidity and temperature control",
@@ -49,12 +36,33 @@ const WhatWeDo = () => {
             </div>
           </div>
         </div>
-        <div className="servicesPagDetailMain">
+        <div className="servicesPageDetailMain">
           <div className="container">
             <div className="servicesDetailLeft">
-              <ActiveTabBar />
+              <div className="servicesPageDetailMainLeft">
+                <ActiveTabBar />
+              </div>
             </div>
-            <div className="servicesDetailContent"></div>
+            {yourOneStopShopService.map((item, index) => (
+              <div key={index} className="servicesMainPageContent">
+                <h2>{item.pageTitle}</h2>
+                {item.description.map((text, i) => (
+                  <p key={i}>{text}</p>
+                ))}
+                <h3>{item.bottomTitle}</h3>
+
+                <ul>
+                  {item.servicesList.map((service, i) => (
+                    <li key={i}>
+                      <div className="serviceIcon">
+                        <img src={ServicesInfo} alt="#" />
+                      </div>
+                      {service}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -62,4 +70,4 @@ const WhatWeDo = () => {
   );
 };
 
-export default WhatWeDo;
+export default Services;

@@ -5,7 +5,7 @@ import LangIcon from "../assets/icons/global.svg";
 const Header = () => {
   const menuItems = [
     { label: "Who We Are", path: "/who-we-are", isDropdown: true },
-    { label: "What We Do", path: "/what-we-do", isDropdown: true },
+    { label: "What We Do", path: "/services", isDropdown: true },
     { label: "Our Projects", path: "/projects", isDropdown: true },
     { label: "Media", path: "/media", isDropdown: true },
     { label: "Careers", path: "/careers", isDropdown: false },

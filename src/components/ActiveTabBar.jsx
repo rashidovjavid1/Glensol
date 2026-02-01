@@ -35,7 +35,10 @@ const ActiveTabBar = () => {
       <ul>
         {services.map((item) => (
           <li key={item.slug}>
-            <a href={`/services/${item.slug}`}>{item.label}</a>
+            <link
+              rel="stylesheet"
+              href="{`/services/${item.slug}`}>{item.label}"
+            />
           </li>
         ))}
       </ul>
