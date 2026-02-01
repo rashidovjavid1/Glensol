@@ -31,7 +31,7 @@ export const services = [
 
 const ActiveTabBar = () => {
   return (
-    <nav>
+    <nav className="activeTabBar">
       <ul>
         {services.map((item) => (
           <li key={item.slug}>

@@ -1888,3 +1888,36 @@
     }
   }
 }
+
+.activeTabBar {
+  scroll-margin-top: 10rem;
+
+  ul {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.1rem solid #ebecf7;
+
+    li {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      a {
+        color: black;
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.034rem;
+        border-left: none;
+        text-decoration: none;
+
+        &:hover {
+          color: #059ff8;
+          transition: ease all 0.3s;
+        }
+      }
+    }
+  }
+}

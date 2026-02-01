@@ -1,5 +1,6 @@
 import React from "react";
 import ServicesPageBanner from "../assets/Images/servicesPageBanner.jpg";
+import ActiveTabBar from "../components/ActiveTabBar";
 const WhatWeDo = () => {
   const servicesListLeft = [
     { label: "Your One Stop Shop" },
@@ -51,21 +52,9 @@ const WhatWeDo = () => {
         <div className="servicesPagDetailMain">
           <div className="container">
             <div className="servicesDetailLeft">
-              <div className="servicesDetailLeftMain">
-                <nav>
-                  <ul>
-                    {servicesListLeft.map((item, index) => (
-                      <li key={index}>
-                        <a href="#">{item.label}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              </div>
+              <ActiveTabBar />
             </div>
-            <div className="servicesDetailContent">
-              {/* Map nan donmeliyem  */}
-            </div>
+            <div className="servicesDetailContent"></div>
           </div>
         </div>
       </div>
