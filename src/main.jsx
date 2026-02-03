@@ -7,5 +7,5 @@ import "./styles/Global.scss";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
 );
