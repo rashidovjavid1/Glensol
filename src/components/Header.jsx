@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import LangIcon from "../assets/icons/global.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Header = () => {
   const menuItems = [
@@ -107,6 +108,7 @@ const Header = () => {
                   stroke-miterlimit="10"
                 />
               </svg>
+              <HamburgerMenu />
             </NavLink>
           </div>
 
