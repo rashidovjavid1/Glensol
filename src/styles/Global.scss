@@ -24,115 +24,201 @@ body {
   header nav {
     display: none;
   }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden !important;
+  }
 
   .hamburgerContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.2rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 160rem;
+    margin-inline: auto;
+    padding-inline: clamp(2rem, 5vw, 6rem);
 
-    .logo {
-      margin-left: 1.2rem;
-    }
+    .headerMain {
+      padding: 1.3rem 0;
+      .logo {
+        margin-left: 1.2rem;
+      }
 
-    .headerRight {
-      gap: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 11.9rem;
-      .searchIcon {
+      .headerRight {
+        gap: 1.2rem;
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 4.4rem;
-        height: 4.4rem;
-        border-radius: 1rem;
-        border: 1px solid #bec7c4;
-
-        img {
-          aspect-ratio: 24/24;
-          object-fit: cover;
+        justify-content: center;
+        margin-left: 11.9rem;
+        .searchIcon {
           display: flex;
           justify-content: center;
+          align-items: center;
+          width: 4.4rem;
+          height: 4.4rem;
+          border-radius: 1rem;
+          border: 1px solid #bec7c4;
+
+          img {
+            flex-shrink: 0;
+            aspect-ratio: 24/24;
+            object-fit: cover;
+          }
         }
-      }
-      .menuIcon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-        background: #454bea;
-        width: 4.4rem;
-        height: 4.4rem;
-
-        img {
-          object-fit: cover;
-          aspect-ratio: 44/44;
-        }
-      }
-    }
-
-    .heroContent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 35.4rem;
-      padding-bottom: 18.8rem;
-
-      h2 {
-        color: #fff;
-        font-size: 3.8rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 120%;
-        letter-spacing: -0.1rem;
-      }
-    }
-
-    .whoWeAreSection {
-      display: flex;
-      flex-direction: column;
-      .container {
-        .whoWeAreMain {
+        .menuIcon {
+          display: flex;
           justify-content: center;
           align-items: center;
-          .whoWeAreLeft {
-            span {
-              color: #059ff8;
-              font-size: 1.4rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%;
-              letter-spacing: -0.03rem;
-            }
+          border-radius: 1rem;
+          background: #454bea;
+          width: 4.4rem;
+          height: 4.4rem;
 
-            h1 {
-              width: 35rem;
-              color: #1e3057;
-              font-size: 3.8rem;
-              font-style: normal;
-              font-weight: 300;
-              line-height: 110%;
-              letter-spacing: -0.03rem;
-            }
-            .aboutUs {
-              p {
-                width: 35rem;
-                color: #1e3057;
-                font-size: 1.6rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 160%;
+          img {
+            object-fit: cover;
+            aspect-ratio: 44/44;
+          }
+        }
+      }
+    }
+  }
+
+  .heroSection {
+    .heroSectionMain {
+      .heroSwiper {
+        .swiper {
+          .container {
+            .heroContent {
+              h2 {
+                padding-top: 10rem;
+                max-width: 90%;
+                color: #fff;
+                font-size: 3.8rem;
+                font-weight: 300;
+                line-height: 120%;
+                letter-spacing: -0.1rem;
+              }
+
+              a {
+                margin-bottom: 13.2rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.9421rem;
               }
             }
           }
-          .whoWeAreRight {
+        }
+      }
+    }
+  }
+
+  .whoWeAreSection {
+    padding: 5.5rem 0 4.3rem;
+    .container {
+      .whoWeAreMain {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        .whoWeAreLeft {
+          h1 {
+            max-width: 90%;
+            color: #1e3057;
+            font-size: 3.8rem;
+            font-weight: 300;
+            line-height: 110%;
+            letter-spacing: -0.03rem;
+          }
+
+          p {
+            color: #1e3057;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 160%;
+          }
+        }
+
+        .whoWeAreRight {
+          .videoWrapper {
+            iframe {
+              width: 35rem;
+              height: 22.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ourServices {
+    .container {
+      .ourServicesMain {
+        .ourServicesTitle {
+          h3 {
+            color: #000;
+            font-size: 3.8rem;
+            font-weight: 300;
+            line-height: 110%;
+            letter-spacing: -0.03rem;
+          }
+        }
+
+        .ourServicesTab {
+          margin-top: 6.2rem;
+          display: flex;
+          flex-direction: column;
+
+          .ourServicesLeft {
+            width: 100%;
+          }
+
+          .ourServicesRight {
+            width: 100%;
+            background: #fff;
             display: flex;
             flex-direction: column;
+            gap: 1.7rem;
+            align-items: center;
 
-            .videoWrapper {
+            .activeTabDescription {
               display: flex;
               flex-direction: column;
+              justify-content: space-between;
+              gap: 1.7rem;
+              font-size: 1.6rem;
+              line-height: 160%;
+
+              .top {
+                h3 {
+                  display: none;
+                }
+
+                p {
+                  color: #1e3057;
+                  font-size: 1.4rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 160%;
+                }
+              }
+
+              .bottom {
+                a {
+                  text-decoration: none;
+                  color: #059ff8;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 1rem;
+                  font-weight: 600;
+                  flex-wrap: wrap;
+                }
+              }
+            }
+
+            .bottom {
+              .activeTabImage {
+                width: 30.3rem;
+                height: 20.1378rem;
+                aspect-ratio: 303 / 201.38;
+              }
             }
           }
         }
