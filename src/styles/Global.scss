@@ -427,6 +427,50 @@ body {
       }
     }
   }
+
+  footer {
+    display: flex;
+    align-items: start;
+    .footerTop {
+      .container {
+        max-width: 100%;
+
+        .footerTopMain {
+          display: flex;
+          justify-content: left;
+          left: 0;
+          nav {
+            ul {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              max-width: 100%;
+              gap: 2.4rem;
+              padding-left: 0;
+              margin: 0;
+              list-style: none;
+
+              li {
+                width: 100%;
+                left: 0;
+                display: flex;
+
+                a {
+                  color: #fff;
+                  font-size: 2rem;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  letter-spacing: 0.06rem;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
