@@ -295,6 +295,138 @@ body {
       }
     }
   }
+
+  .partnersSection {
+    .container {
+      .partnersMain {
+        display: flex;
+        justify-content: space-between;
+
+        .partnersTop {
+          span {
+            color: #059ff8;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: -0.03rem;
+          }
+
+          .partnersTitle {
+            h3 {
+              color: #1e3057;
+              font-size: 3.8rem;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 110%;
+              letter-spacing: -0.03rem;
+            }
+
+            a {
+              color: #059ff8;
+              font-size: 1.8rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 150%;
+              letter-spacing: -0.018rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .partnersSlider {
+    .partnerItem {
+      background: #fff;
+      border-radius: 0.947px solid #dfecf4;
+      width: 13.2288rem;
+      height: 11.2634rem;
+      max-width: 20rem;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        border-radius: 0.5724rem;
+        border: 0.716px solid #dfecf4;
+        background: #fff;
+      }
+    }
+
+    .partnersSwiper {
+      .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .ourProjectsSection {
+    .container {
+      .ourProjectsMain {
+        .ourProjectsTop {
+          .ourProjectsTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            h3 {
+              color: #1e3057;
+              font-size: 3.8rem;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 110%;
+              letter-spacing: -0.03rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottomSection {
+    padding-top: 5.5rem;
+    padding-bottom: 0;
+
+    .bottomMain {
+      margin-top: 10.5rem;
+      background: #ebf4fa;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2.4rem;
+      height: 51.2rem;
+
+      .bottomRight {
+        width: 100%;
+        max-width: 90%;
+        padding: 5.5rem 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          max-width: 90%;
+          color: #000;
+          font-size: 3.8rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 110%;
+          letter-spacing: -0.03rem;
+          text-align: center;
+        }
+      }
+
+      .bottomImage {
+        flex-shrink: 0;
+        width: 100%;
+        height: -webkit-fill-available;
+        position: relative;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
